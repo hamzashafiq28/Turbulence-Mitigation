@@ -31,19 +31,19 @@ Refer to the individual model's README file for usage instructions and examples.
 
 - **Folder**: `models/TurbNet`
 - **Pre-trained Model**: [Download here](https://drive.google.com/drive/folders/1-MDnGatMpqwnYbEvK4TMW2NLjaD6iFor?usp=drive_link)
-- **Documentation**: [TurbNet Documentation](models/TurbNet/README.md)
+- **Documentation**: [TurbNet Documentation](TurbNet/README.md)
 
 ### AT-Net
 **Description**: This model learns to Restore Images Degraded by Atmospheric Turbulence Using Uncertainty, recognized as Best paper at IEEE International Conference on Image Processing, 2021.
 
 - **Folder**: `models/AT_Net`
 - **Pre-trained Model**: [Download here](https://drive.google.com/drive/folders/1kOgKsrJOd5qwL8LseaIw4OxXPBwluso0?usp=drive_link)
-- **Documentation**: [AT_Net Documentation](models/AT_Net/README.md)
+- **Documentation**: [AT_Net Documentation](AT_Net/README.md)
 
 ### TMT
 **Description**: This state-of-the-art transformer-based model mitigates turbulence effects in both videos and images.
 
 - **Folder**: `models/TMT`
 - **Pre-trained Model**: [Download here](https://drive.google.com/drive/folders/1yjoUy6X1-bT3i44Gd6eozJRNaQTshCc5?usp=drive_link)
-- **Documentation**: [TMT Documentation](models/TMT/README.md)
+- **Documentation**: [TMT Documentation](TMT/README.md)
 
