@@ -1,0 +1,6 @@
+models:
+    model_path: "turb_current.pth"
+output:
+    output_path: "output_dir/video"
+eval_image:
+    image_path: "test_input_image/video"
