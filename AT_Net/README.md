@@ -1,29 +1,38 @@
 # AT-Net
-Learning to Restore Images Degraded by Atmospheric Turbulence Using Uncertainty, recognized as ***Best paper*** at IEEE International Conference on Image Processing, 2021
-
-
-[Rajeev Yasarla](https://sites.google.com/view/rajeevyasarla/home),  [Vishal M. Patel](https://engineering.jhu.edu/ece/faculty/vishal-m-patel/)
-
-     @InProceedings{9506614,
-     author={Yasarla, Rajeev and Patel, Vishal M.},
-     booktitle={2021 IEEE International Conference on Image Processing (ICIP)}, 
-     title={Learning to Restore Images Degraded by Atmospheric Turbulence Using Uncertainty}, 
-     year={2021},
-     pages={1694-1698},
-     doi={10.1109/ICIP42928.2021.9506614}
-     }
-
 
 Atmospheric turbulence can significantly degrade the quality of images acquired by long-range imaging systems by causing spatially and temporally random fluctuations in the index of refraction of the atmosphere. Variations in the refractive index causes the captured images to be geometrically distorted and blurry. Hence, it is important to compensate for the visual degradation in images caused by atmospheric turbulence. In this paper, we propose a deep learning-based approach for restring a single image degraded by atmospheric turbulence. We make use of the epistemic uncertainty based on Monte Carlo dropouts to capture regions in the image where the network is having hard time restoring. The estimated uncertainty maps are then used to guide the network to obtain the restored image. Extensive experiments are conducted on synthetic and real images to show the significance of the proposed work.
 
-## Prerequisites:
-1. Linux
-2. Python 2 or 3
-3. Pytorch version >=1.0
-4. CPU or NVIDIA GPU + CUDA CuDNN (CUDA 8.0)
-```
-pip install requirements.txt
-```
+## Installation
+
+1. **Set up a virtual environment:**
+
+    ```bash
+    # On Unix/Linux/MacOS
+    python3 -m venv ATNET
+
+    # On Windows
+    python -m venv ATNET
+    ```
+
+2. **Activate the virtual environment:**
+
+    ```bash
+    # On Unix/Linux/MacOS
+    source ATNET/bin/activate
+
+    # On Windows
+    .\ATNET\Scripts\activate
+    ```
+
+3. **Install dependencies:**
+
+    Once the virtual environment is activated, you can install the required dependencies using pip.
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
 
 ## To train AT-Net
 1. Clean face images from Helen and CelebA are aligned and used as input to train AT-Net.
@@ -42,4 +51,6 @@ python train.py --learning_rate 2e-4 --crop_size [256,256] --train_batch_size 2 
 ```
 python test.py --val_dir ="path_test_images" --checkpoint="path_to_models" --exp_name "./results"
 ```
-pretrained models can downloaded from this link [Dropbox](https://www.dropbox.com/s/7k32so1s0pgykil/drive-download-20220704T212509Z-001.zip?dl=0)
+pretrained models can downloaded from this link .(https://drive.google.com/drive/folders/1kOgKsrJOd5qwL8LseaIw4OxXPBwluso0?usp=drive_link)
+
+
